@@ -94,7 +94,7 @@ export default {
             console.log(key, keyPath);
         },
         clickMenu(item) {
-            console.log(item);
+            // console.log(item);
             // 当页面的路由与跳转的路由不一致才允许跳转
             if (
                 this.$route.path !== item.path &&
@@ -102,6 +102,7 @@ export default {
             ) {
                 this.$router.push(item.path);
             }
+            this.$store.commit('selectMenu', item)
         },
     },
     computed: {
