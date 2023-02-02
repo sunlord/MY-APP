@@ -37,6 +37,7 @@
 </style>
 
 <script>
+import Cookie from 'js-cookie'
 export default {
   data() {
     return {}
@@ -73,7 +74,8 @@ export default {
       return this.$store.state.Tab.isCollapse;
     },
     menuData() {
-      return this.$store.state.Tab.menu;
+      // 判断当前数据,如果过缓存中没有,当前store中去获取
+      return JSON.parse(Cookie.get('menu')) || this.$store.state.Tab.menu;
     }
   },
 };

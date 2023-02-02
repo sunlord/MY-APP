@@ -18,14 +18,15 @@ const routes = [
   {
     path: '/',
     component: Main,
+    name: 'Main',
     redirect: '/home', //重定向
     children: [
-      // 子路由
-      { path: 'home', name: 'home', component: Home }, //首页
-      { path: 'user', component: User }, //用户管理
-      { path: 'mall', component: Mall }, //商品管理
-      { path: 'Page1', component: PageOne }, //商品管理
-      { path: 'Page2', component: PageTwo }, //商品管理
+      // // 子路由
+      // { path: 'home', name: 'home', component: Home }, //首页
+      // { path: 'user', component: User }, //用户管理
+      // { path: 'mall', component: Mall }, //商品管理
+      // { path: 'Page1', component: PageOne }, //商品管理
+      // { path: 'Page2', component: PageTwo }, //商品管理
     ]
   },
   {

@@ -37,6 +37,8 @@ export default {
         console.log('登出');
         // 清除cookie中的token
         Cookie.remove('token');
+        // 清除cookie中的menu
+        Cookie.remove('menu');
         // 跳转到登录页
         this.$router.push('/login');
       }
