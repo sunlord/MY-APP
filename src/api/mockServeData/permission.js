@@ -69,13 +69,6 @@ export default {
               url: "home/index",
             },
             {
-              path: "/mall",
-              name: "mall",
-              label: "商品管理",
-              icon: "video-play",
-              url: "mall/index",
-            },
-            {
               path: "/user",
               name: "user",
               label: "用户管理",

@@ -9,7 +9,8 @@ export default {
                 icon: "s-home",
                 url: "Home/Home",
             }
-        ] //面包屑数据
+        ], //面包屑数据
+        menu: []
     },
     mutations: {
         //修改菜单展开和收起的方法
@@ -27,6 +28,10 @@ export default {
                     state.tabsList.push(val);
                 }
             }
+        },
+        // 设置menu的数据
+        setMenu(state, val) {
+          state.menu = val
         }
     }
 }
